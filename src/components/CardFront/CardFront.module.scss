@@ -30,7 +30,7 @@
     h2 {
       color: $primary-color;
       font-size: 1.3rem;
-      margin-bottom: $bae-spacing;
+      margin-bottom: $base-spacing;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -44,15 +44,15 @@
     .links {
       display: flex;
       justify-content: space-between;
-      margin-top: auto0;
+      margin-top: auto;
 
       a {
-        font-size: 1.2em0;
+        font-size: 1.2em;
         text-decoration: none;
         color: $secondry-text;
 
         &:hover {
-          color: blue0;
+          color: blue;
         }
       }
 
