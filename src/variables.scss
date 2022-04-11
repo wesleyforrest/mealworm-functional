@@ -1,0 +1,25 @@
+$base-spacing: 5px;
+
+$primary-color: rgb(70, 50, 111);
+$secondry-color: rgb(236, 69, 102);
+$tertiary-color: rgb(141, 140, 140);
+
+$primary-color-transparent: rgb(70, 50, 111, 0.85);
+$secondry-color-transparent: rgb(236, 69, 102, 0.85);
+$tertiary-color-transparent: rgb(141, 140, 140, 0.85);
+
+$primary-border: solid 2px $primary-color;
+$secondry-border: solid 2px $secondry-color;
+
+$primary-text: $secondry-color;
+$secondry-text: grey;
+$tertiary-text: rgb(199, 197, 197);
+
+$cord-shadowing: 0 4px 7px rgb(0, 0, 0, 0.2), 0 4px 7px rgb(0, 0, 0, 0.27);
+$card-hover-shadowing: 0 14px 28px rgb(0, 0, 0, 0.27),
+  0 10px 10px rgb(0, 0, 0, 0.3);
+
+$navbar-height-mmb: 60px;
+$navbar-height: 75px;
+
+$border-rounding: 5px;
