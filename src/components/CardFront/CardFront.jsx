@@ -8,12 +8,12 @@ const CardFront = () => {
         src="https://wwwthemealdb.com/images/media/meals/sstssx1487349585.jpg"
         alt="Thai Green Curry"
       />
-      <section classNmae={styles.recepieDetails}>
-        <h2>Thai Green Currry</h2>
+      <section className={styles.recipeDetails}>
+        <h2>Thai Green Curry</h2>
         <p>
           <span>Thai</span>
         </p>
-        <div class={styles.links}>
+        <div className={styles.links}>
           <a href="">Full Recipe</a>
           <a href="">YouTube</a>
         </div>
