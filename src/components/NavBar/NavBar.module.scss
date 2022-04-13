@@ -1,1 +1,13 @@
 @import "../../variables.scss";
+
+.layout {
+  $navbar-height-mb: 60px;
+  $navbar-height: 75px;
+  $border-rounding: 5px;
+  display: flex;
+  margin: 20px;
+
+  h1 {
+    color: $primary-color;
+  }
+}

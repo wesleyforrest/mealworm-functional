@@ -4,7 +4,10 @@ import styles from "./NavBar.module.scss";
 const NavBar = () => {
   return (
     <div>
-      <h1>MealWorm</h1>
+      <section className={styles.layout}>
+        <img src="../plate-secondary.png" alt="Mealworm Logo" />
+        <h1>MealWorm</h1>
+      </section>
     </div>
   );
 };
