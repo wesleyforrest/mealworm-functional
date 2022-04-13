@@ -8,8 +8,10 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <CardFront />
-      <CardBack />
+      <div style={{ display: "flex" }}>
+        <CardFront />
+        <CardBack />
+      </div>
     </div>
   );
 };
