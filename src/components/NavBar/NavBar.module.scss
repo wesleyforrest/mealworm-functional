@@ -5,9 +5,17 @@
   $navbar-height: 75px;
   $border-rounding: 5px;
   display: flex;
+  align-items: center;
   margin: 20px;
+  border-bottom: 2px solid black;
 
   h1 {
     color: $primary-color;
+  }
+
+  img {
+    height: 5%;
+    width: 5%;
+    margin: 10px;
   }
 }
