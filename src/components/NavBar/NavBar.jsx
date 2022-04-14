@@ -5,7 +5,10 @@ const NavBar = () => {
   return (
     <div>
       <section className={styles.layout}>
-        <img src="../plate-secondary.png" alt="Mealworm Logo" />
+        <img
+          src="src/components/NavBar/images/tree-736885_1280.jpg"
+          alt="Mealworm Logo"
+        />
         <h1>MealWorm</h1>
       </section>
     </div>
