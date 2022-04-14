@@ -1,17 +1,22 @@
 import React, { Component } from "react";
+import recipes from "../../data/recipes";
 import styles from "./CardBack.module.scss";
+import recipes from "../../data/recipes.js";
 
-const CardBack = () => {
+const CardBack = (props) => {
+  const { strMeal, strInstructions, ingredients } = props.recipe;
+
+  let cleanInstructions =
+    recipes[1].strInstructions.length > 300
+      ? recipes[1].strInstructions.substring(0, 300)
+      : recipes[1].strInstructionss;
   return (
     <section className={styles.cardBack}>
-      <h2>Thai Green Curry</h2>
+      <h2>{strMeal}</h2>
       <h3>Instructions</h3>
-      <p>
-        Put the potatoes in a pan of boiling water and cook for 5 minutes. Throw
-        in the beans and cook for a further 3 minutes, by which time both should
-        be just tender but not too soft. Drain and put to one...
-      </p>
+      <p>{cleanInstructions}</p>
       <h3>Ingredients</h3>
+      <p>{ingredients}</p>
     </section>
   );
 };
