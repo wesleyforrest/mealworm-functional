@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./CardBack.module.scss";
 
 const CardBack = (props) => {
-  const { ingredients, strMeal, strInstructions } = props.recipe;
+  const { strMeal, strInstructions } = props.recipe;
 
   const shortenInstructions = (instructions) =>
     instructions.length < 300
