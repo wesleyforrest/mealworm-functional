@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import recipes from "../../data/recipes";
 import styles from "./CardBack.module.scss";
-import recipes from "../../data/recipes.js";
 
 const CardBack = (props) => {
   const { strMeal, strInstructions, ingredients } = props.recipe;
@@ -14,7 +13,7 @@ const CardBack = (props) => {
     <section className={styles.cardBack}>
       <h2>{strMeal}</h2>
       <h3>Instructions</h3>
-      <p>{cleanInstructions}</p>
+      <p>{cleanInstructions}...</p>
       <h3>Ingredients</h3>
       <p>{ingredients}</p>
     </section>
