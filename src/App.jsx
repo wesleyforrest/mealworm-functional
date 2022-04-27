@@ -10,6 +10,9 @@ const App = () => {
   const getCardFrontJsx = (recipe) => (
     <CardFront key={recipe.idMeal} recipe={recipe} />
   );
+  const getCardBackJSX = (recipe) => (
+    <CardBack key={recipe.idMeal} recipe={recipe} />
+  );
 
   return (
     <>
@@ -18,7 +21,7 @@ const App = () => {
       </section>
       <section className={styles.content}>
         {recipes.map(getCardFrontJsx)}
-        <CardBack recipe={recipes[1]} />
+        {recipes.map(getCardBackJSX)}
       </section>
     </>
   );
