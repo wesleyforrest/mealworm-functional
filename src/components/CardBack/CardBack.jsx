@@ -1,8 +1,9 @@
 import React from "react";
+import List from "../List";
 import styles from "./CardBack.module.scss";
 
 const CardBack = (props) => {
-  const { strMeal, strInstructions } = props.recipe;
+  const { ingredients, strMeal, strInstructions } = props.recipe;
 
   const shortenInstructions = (instructions) =>
     instructions.length < 300
@@ -15,6 +16,9 @@ const CardBack = (props) => {
       <h3>Instructions</h3>
       <p>{shortenInstructions(strInstructions)}</p>
       <h3>Ingredients</h3>
+      <div className={styles.list}>
+        <List items={ingredients} />
+      </div>
     </section>
   );
 };
